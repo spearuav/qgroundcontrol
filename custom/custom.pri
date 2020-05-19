@@ -27,8 +27,9 @@ MAVLINK_CONF = ardupilotmega
 #CONFIG  += QGC_DISABLE_APM_MAVLINK
 #CONFIG  += QGC_DISABLE_APM_PLUGIN QGC_DISABLE_APM_PLUGIN_FACTORY
 
-# We implement our own PX4 plugin factory
+# We implement our own plugin factory and plugin
 CONFIG  += QGC_DISABLE_PX4_PLUGIN_FACTORY
+CONFIG  += QGC_DISABLE_PX4_PLUGIN
 
 # Branding
 

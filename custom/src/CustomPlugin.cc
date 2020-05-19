@@ -133,12 +133,12 @@ QGCOptions* CustomPlugin::options()
 
 QString CustomPlugin::brandImageIndoor(void) const
 {
-    return QStringLiteral("/custom/img/CustomAppIcon.png");
+    return QStringLiteral("/custom/img/SpearUAVIcon.png");
 }
 
 QString CustomPlugin::brandImageOutdoor(void) const
 {
-    return QStringLiteral("/custom/img/CustomAppIcon.png");
+    return QStringLiteral("/custom/img/SpearUAVIcon.png");
 }
 
 bool CustomPlugin::overrideSettingsGroupVisibility(QString name)
@@ -160,7 +160,7 @@ bool CustomPlugin::adjustSettingMetaData(const QString& settingsGroup, FactMetaD
         // This tells QGC than when you are creating Plans while not connected to a vehicle
         // the specific firmware/vehicle the plan is for.
         if (metaData.name() == AppSettings::offlineEditingFirmwareTypeName) {
-            metaData.setRawDefaultValue(MAV_AUTOPILOT_PX4);
+            metaData.setRawDefaultValue(MAV_AUTOPILOT_ARDUPILOTMEGA);
             return false;
         } else if (metaData.name() == AppSettings::offlineEditingVehicleTypeName) {
             metaData.setRawDefaultValue(MAV_TYPE_QUADROTOR);
